@@ -1,0 +1,11 @@
+#element-01 {
+
+    color: red;
+}
+
+/* Selector múltiple donde li tiene un atributo de tipo id = element-01 dentro de una lista desordenada ul con una clase .lista */
+
+ul.lista li#element-01{
+
+    size: 2rem;
+}

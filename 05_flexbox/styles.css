@@ -1,0 +1,5 @@
+.flex {
+    width: 300px;
+    flex-wrap:wrap;
+    align-items: center;
+}
