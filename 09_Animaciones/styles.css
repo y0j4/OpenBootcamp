@@ -1,5 +1,5 @@
 /* Ejercicio propuesto: 
-Cada vez que se haga hover el cuadrado hijo debe pasar por las posiciones (0,0), (1,0), (1,1), (0,1) y vuelta al incio*/
+Cada vez que se haga hover el cuadrado hijo debe pasar por las posiciones (0,0), (1,0), (1,1), (0,1) y vuelta al incio
 .padre{
     width: 400px;
     height: 400px;
@@ -41,4 +41,26 @@ Cada vez que se haga hover el cuadrado hijo debe pasar por las posiciones (0,0),
         transform: translateX(0%) translateY(0%);
     }
 
+}*/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.btn-modern{
+    background-color: greenyellow;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.btn-modern:hover{
+    transform: translateY(-5px);
+    background-color: rgb(128, 211, 4);
+    color: green;
+    border-bottom: 3px solid rgb(99, 163, 4);
 }
