@@ -1,0 +1,44 @@
+/* Ejercicio propuesto: 
+Cada vez que se haga hover el cuadrado hijo debe pasar por las posiciones (0,0), (1,0), (1,1), (0,1) y vuelta al incio*/
+.padre{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(59, 70, 218, 0.952);
+}
+
+.hijo{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(132, 0, 255, 0.87);
+}
+
+.padre:hover .hijo{
+    animation: traslacion 1s ease-in-out forwards;
+}
+
+@keyframes traslacion {
+
+    0%{
+        transform: translateX(0%);
+        transform: translateY(0%);
+    }
+
+    25%{
+        transform: translateX(100%);
+        
+    }
+    
+    50% {
+        transform: translateX(100%) translateY(100%);
+
+    }
+
+    75%{
+        transform: translateX(0%) translateY(100%);
+    }
+
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+}
